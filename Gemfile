@@ -34,3 +34,23 @@ group :test do
   # Pretty printed test output
   gem 'turn', '0.8.2', :require => false
 end
+
+group :test, :development do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+
+  gem 'guard'
+
+  # notification in linux
+  gem 'rb-inotify', :require => false
+  gem 'libnotify', :require => false
+
+  gem 'spork', '>= 0.9.0.rc8'
+  gem 'guard-spork'
+
+  gem 'rspec'
+  gem 'rspec-instafail'
+  gem 'guard-rspec'
+
+  gem 'guard-livereload'
+end
